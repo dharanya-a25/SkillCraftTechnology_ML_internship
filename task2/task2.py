@@ -38,4 +38,4 @@ plt.show()
 # Save the cluster results to a CSV file
 submission = data[['CustomerID', 'cluster']]  
 submission.rename(columns={'CustomerID': 'Customer_ID', 'cluster': 'Cluster_Label'}, inplace=True)
-submission.to_csv('Task2/customer_clusters.csv', index=False)
+submission.to_csv('task2/customer_clusters.csv', index=False)
