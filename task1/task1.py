@@ -6,8 +6,8 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.impute import SimpleImputer
 
 
-train_data = pd.read_csv('Task1/train.csv')
-test_data = pd.read_csv('Task1/test.csv')
+train_data = pd.read_csv('task1/train.csv')
+test_data = pd.read_csv('task1/test.csv')
 
 # Selecting a subset of features relevant to house pricing.
 selected_features = [
@@ -43,7 +43,7 @@ submission = pd.DataFrame({
 })
 
 # Save the submission file
-submission.to_csv('Task1/house_price_submission.csv', index=False)
+submission.to_csv('task1/house_price_submission.csv', index=False)
 
 # Output the submission file to check
 print(submission.head())
